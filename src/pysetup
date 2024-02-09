@@ -1,0 +1,17 @@
+#!/bin/bash
+
+home="~"
+home=$(realpath -s "$home")
+home=$(echo "$home" | tr -d '~')
+projectPath=$(echo "$home qutePy/")
+projectPath=$(echo "$projectPath" | tr -d ' ')
+scriptPath=$(echo "$home .local/share/qutebrowser/userscripts/your-python3-script.py")
+scriptPath=$(echo "$scriptPath" | tr -d ' ')
+echo "$home"
+echo "$projectPath"
+
+mkdir "$projectPath"
+echo $QUTE_FIFO > "$projectPath/data.txt"
+
+# at last run the script but it is another file (for now)
+python3 $scriptPath
