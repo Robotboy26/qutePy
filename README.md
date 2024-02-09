@@ -4,22 +4,17 @@
 
 Download:
 
-`
+```
 cd ~
-
 mkdir qutePy # This folder will store data passed by Qutebrowser heading to the python3 script
-`
+```
 
-`
+```
 git clone https://github.com/Robotboy26/qutePy.git # Clone the repo to any location
-
 cd qutePy
-
 sudo chmod u+x pull.sh
-
 ./push.sh # This moves qutePy.py (the library) into the userscripts folder for Qutebrowser
-
-`
+```
 
 `
 cd ~/.local/share/qutebrowser/userscripts/ # You will be creating a file here shortly
@@ -104,9 +99,11 @@ In the absence of a type 'info' is the default (as shown in the first 'message' 
 # Other Information
 
 file and folders locations:
+```
 config.py: '~/.config/qutebrowser'
 base: '/usr/share/qutebrowser'
 user userscripts: '~/.local/share/qutebrowser/userscripts/'
+```
 
 # Todo
 
