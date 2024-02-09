@@ -3,13 +3,14 @@
 # Installation
 
 Download:
+
 `
 cd ~
 mkdir qutePy # This folder will store data passed by Qutebrowser heading to the python3 script
 `
 
 `
-git clone https://github.com/Robotboy26/qutePy.git # Clone the repo to any location (it should work at any location at least).
+git clone https://github.com/Robotboy26/qutePy.git # Clone the repo to any location
 cd qutePy
 sudo chmod u+x pull.sh
 ./push.sh # This moves qutePy.py (the library) into the userscripts folder for Qutebrowser
